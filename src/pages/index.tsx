@@ -8,6 +8,7 @@ import BgCharging from "@/../public/bg-charging.jpeg";
 import BgConnectivity from "@/../public/bg-connectivity.jpeg";
 import BgSafety from "@/../public/bg-safety.jpeg";
 import HeroSection from "@/components/HeroSection";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
         title="Designed for peace of mind."
         description="Welcome to DreamDrive, your elegantly advanced driver assistance system. That means more sensors and better radar. Day or night - rain or shine - rest assured that all angles are covered."
       />
+      <CTASection />
     </main>
   );
 }

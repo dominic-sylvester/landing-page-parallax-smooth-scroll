@@ -16,7 +16,11 @@ const Section: React.FC<{
   const y = useTransform(scrollYProgress, [0, 1], ["-20%", "10%"]);
 
   return (
-    <section ref={SectionRef} className="relative h-screen overflow-hidden">
+    <section
+      id={tag}
+      ref={SectionRef}
+      className="relative h-screen overflow-hidden"
+    >
       <motion.div className="absolute w-full h-[120%] -z-10" style={{ top: y }}>
         <div className="absolute inset-0 bg-black/30 z-10" />
         <Image src={image} alt="Overview" fill className="object-cover" />
